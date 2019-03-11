@@ -8,3 +8,5 @@ with picamera.PiCamera() as camera:
     # Camera warm-up time
     time.sleep(2)
     camera.start_recording('/data/video.h264')
+    sleep(10)
+    camera.stop_recording()
